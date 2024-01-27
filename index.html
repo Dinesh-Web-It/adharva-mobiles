@@ -7,24 +7,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<script>
+    function sidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+
+    function menubar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+
+</script>
 
 <body>
-    <div class="container1">
-        <div class="task-bar">
-            <div class="list">
+    <nav>
+        <div class="container1">
+            <span><img class="image" src="logo1.png" /></span>
+            <h4>Adharva Mobiles</h4>
+            <ul class="list">
+                <li class="side-tasks"><a href="#">All</a></li>
+                <li class="side-tasks"><a href="#">Features</a></li>
+                <li class="side-tasks"><a href="#">prodects</a></li>
+                <li class="side-tasks"><a href="#">Accessories</a></li>
+                <li class="side-tasks"><a href="#">Service</a></li>
+                <li class="side-tasks"><a href="#">Aboutus</a></li>
+                <li class="side-tasks"><a href="#">Login</a></li>
+                <li class="bar" onclick=sidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+                            viewBox="0 -960 960 960" width="26">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg>
+            </ul>
+            <ul class="sidebar">
+                <li onclick=menubar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+                            viewBox="0 -960 960 960" width="24">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li> </a></li>
                 <li class="tasks"><a href="#">All</a></li>
                 <li class="tasks"><a href="#">Features</a></li>
                 <li class="tasks"><a href="#">prodects</a></li>
                 <li class="tasks"><a href="#">Accessories</a></li>
                 <li class="tasks"><a href="#">Service</a></li>
                 <li class="tasks"><a href="#">Aboutus</a></li>
-            </div>
-        </div>
-    </div>
+                <li><a href="#">Login</a></li>
 
-    <div class="wrapper">
-        <img src="logo1.jpg">
-    </div>
+            </ul>
+
+        </div>
+    </nav>
+
     <div class="container2">
         <div class="content">
             <div class="main">
@@ -147,40 +179,11 @@
         </div>
     </div>
 
+    <hr>
 
     <footer>
         <div class="container6">
             <div class="wrapper1">
-                <div class="logo-icon">
-                    <img src="logo1.jpg">
-                    <p>Follow us on</p>
-                </div>
-                <div class="icons">
-                    <ul>
-                        <li class="I">
-                            <a href="#">
-                                <img src="twitter.png" alt="">
-                            </a>
-                        </li>
-                        <li class="I">
-                            <a href="#">
-                                <img src="instagram.png" alt="">
-                            </a>
-                        </li>
-                        <li class="I">
-                            <a href="#">
-                                <img src="whatsapp (1).png" alt="">
-                            </a>
-                        </li>
-                        <li class="I">
-                            <a href="#">
-                                <img src="email.png" alt="">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="wrapper2">
                 <div class="footer1">
                     <ul>
                         <li>
@@ -240,6 +243,36 @@
                     </ul>
                 </div>
             </div>
+            <div class="wrapper2">
+                <div class="logo-icon">
+                    <img src="logo1.png" alt="image not Supported">
+                    <p>Follow us on</p>
+                </div>
+                <div class="icons">
+                    <ul>
+                        <li class="I">
+                            <a href="#">
+                                <img src="twitter.png" alt="can't access">
+                            </a>
+                        </li>
+                        <li class="I">
+                            <a href="#">
+                                <img src="instagram.png" alt="can't access">
+                            </a>
+                        </li>
+                        <li class="I">
+                            <a href="#">
+                                <img src="whatsapp (1).png" alt="can't access">
+                            </a>
+                        </li>
+                        <li class="I">
+                            <a href="#">
+                                <img src="email.png" alt="can't access">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <hr>
         <div class="copyrights">
@@ -249,7 +282,7 @@
             </div>
             <hr>
             <div class="rights">
-                <p>Copyright @ 2023 Adharva Mobile All rights reserved</p>
+                <p class="copyrights">Copyright @ 2023 Adharva Mobile All rights reserved</p>
             </div>
         </div>
 
